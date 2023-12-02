@@ -549,26 +549,64 @@
         </p>
         <form class="review-form">
           <div class="review-form-field-wrapper">
-            <label class="review-form-field-label">Name</label>
-            <input class="revew-form-input" type="text" />
+            <label class="review-form-field-label" for="user-name">Name</label>
+            <input
+              class="revew-form-input"
+              id="user-name"
+              name="user-name"
+              type="text"
+              pattern="[a-zA-Zа-яА-яіІїЇєЄгГ']+"
+              title="Nadiya"
+              required
+            />
           </div>
           <div class="review-form-field-wrapper">
-            <label class="review-form-field-label">Phone</label>
-            <input class="revew-form-input" type="text" />
+            <label class="review-form-field-label" for="user-tel">Phone</label>
+            <input
+              class="revew-form-input"
+              id="user-tel"
+              name="user-tel"
+              type="tel"
+              pattern="[0-9{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+              title="xxx-xxx-xx-xx"
+              required
+            />
           </div>
           <div class="review-form-field-wrapper">
-            <label class="review-form-field-label">Email></label>
-            <input class="revew-form-input" type="text" />
+            <label class="review-form-field-label" for="user-email"
+              >Email</label
+            >
+            <input
+              class="revew-form-input"
+              id="user-email"
+              name="user-email"
+              type="email"
+              required
+            />
           </div>
           <div class="review-form-field-wrapper">
-            <label class="review-form-field-label">Comment</label>
-            <textarea class="revew-form-comment" placeholder="Text input">
-            </textarea>
+            <label class="review-form-field-label" for="user-comment"
+              >Comment</label
+            ><textarea
+              class="revew-form-comment"
+              id="user-comment"
+              name="user-comment"
+              placeholder="Text input"
+            ></textarea>
           </div>
           <div class="review-form-checkbox-wrapper">
-            <input class="revew-form-checkbox" type="checkbox" />I accept the
-            terms and conditions of the <a href="">Privacy Policy</a>
-            <label class="revew-form-checkbox-label"></label>
+            <input
+              class="revew-form-checkbox"
+              type="checkbox"
+              id="user-privacy-policy"
+              name="user-privacy-policy"
+              value="True"
+            />I accept the terms and conditions of the
+            <a href="">Privacy Policy</a>
+            <label
+              class="revew-form-checkbox-label"
+              for="user-privacy-policy"
+            ></label>
           </div>
           <button class="review-form-submit-btn" type="submit">Send</button>
         </form>
