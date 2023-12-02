@@ -614,3 +614,38 @@ background-color: #31d0aa;
 .span-footer {
    color: #F4F4FD;
 }
+
+/*====backdrop===*/
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999999;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(46, 47, 66, 0.40);
+    /*======/backdrop===*/
+
+    /*=====modal window style===*/
+}
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 408px;
+    min-height: 584px;
+    background-color: #FCFCFC;
+    border-radius: 4px;
+padding: 40px;
+
+}
+ /*=====modal window style===*/
+
+.modal-close-btn {
+   
+    background-color: transparent;
+ width: 24;
+    height: 24;
+    line-height: 0;
+}
