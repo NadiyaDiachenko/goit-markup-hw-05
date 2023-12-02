@@ -550,39 +550,69 @@
         <form class="review-form">
           <div class="review-form-field-wrapper">
             <label class="review-form-field-label" for="user-name">Name</label>
-            <input
-              class="revew-form-input"
-              id="user-name"
-              name="user-name"
-              type="text"
-              pattern="[a-zA-Zа-яА-яіІїЇєЄгГ']+"
-              title="Nadiya"
-              required
-            />
+            <div class="revew-form-input-wrapper">
+              <input
+                class="revew-form-input"
+                id="user-name"
+                name="user-name"
+                type="text"
+                pattern="[a-zA-Zа-яА-яіІїЇєЄгГ']+"
+                title="Nadiya"
+                required
+              />
+              <svg class="revew-form-input-ikon">
+                <use
+                  href="./images/icons.svg#icon-user"
+                  width="18"
+                  height="18"
+                  aria-label="ikon user"
+                ></use>
+              </svg>
+            </div>
           </div>
           <div class="review-form-field-wrapper">
             <label class="review-form-field-label" for="user-tel">Phone</label>
-            <input
-              class="revew-form-input"
-              id="user-tel"
-              name="user-tel"
-              type="tel"
-              pattern="[0-9{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
-              title="xxx-xxx-xx-xx"
-              required
-            />
+            <div class="revew-form-input-wrapper">
+              <input
+                class="revew-form-input"
+                id="user-tel"
+                name="user-tel"
+                type="tel"
+                pattern="[0-9{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                title="xxx-xxx-xx-xx"
+                required
+              />
+              <svg class="revew-form-input-ikon">
+                <use
+                  href="./images/icons.svg#icon-phone"
+                  width="18"
+                  height="18"
+                  aria-label="ikon tel"
+                ></use>
+              </svg>
+            </div>
           </div>
           <div class="review-form-field-wrapper">
             <label class="review-form-field-label" for="user-email"
               >Email</label
             >
-            <input
-              class="revew-form-input"
-              id="user-email"
-              name="user-email"
-              type="email"
-              required
-            />
+            <div class="revew-form-input-wrapper">
+              <input
+                class="revew-form-input"
+                id="user-email"
+                name="user-email"
+                type="email"
+                required
+              />
+              <svg class="revew-form-input-ikon">
+                <use
+                  href="./images/icons.svg#icon-meil"
+                  width="18"
+                  height="18"
+                  aria-label="ikon meil"
+                ></use>
+              </svg>
+            </div>
           </div>
           <div class="review-form-field-wrapper">
             <label class="review-form-field-label" for="user-comment"
@@ -592,6 +622,7 @@
               id="user-comment"
               name="user-comment"
               placeholder="Text input"
+              required
             ></textarea>
           </div>
           <div class="review-form-checkbox-wrapper">
@@ -601,12 +632,13 @@
               id="user-privacy-policy"
               name="user-privacy-policy"
               value="True"
-            />I accept the terms and conditions of the
-            <a href="">Privacy Policy</a>
-            <label
-              class="revew-form-checkbox-label"
-              for="user-privacy-policy"
-            ></label>
+              required
+            />
+            <label class="revew-form-checkbox-label" for="user-privacy-policy">
+              <span class="revew-form-own-checkbox"></span>
+              I accept the terms and conditions of the
+              <a href="">Privacy Policy</a>
+            </label>
           </div>
           <button class="review-form-submit-btn" type="submit">Send</button>
         </form>
