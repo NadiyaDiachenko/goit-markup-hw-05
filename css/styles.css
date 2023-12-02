@@ -642,8 +642,7 @@ padding: 40px;
 }
  /*=====modal window style===*/
 
-.modal-close-btn {
-   
+.modal-close-btn {   
     background-color: transparent;
  width: 24;
     height: 24;
