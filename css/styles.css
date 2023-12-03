@@ -667,7 +667,10 @@ body {
     border-radius: 4px;
         border: 1px solid #FFF;
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-}
+width: 264px;
+height: 40px;
+    }
+    
 .footer-subscrib>label {
     display: flex;
     justify-content: center;
@@ -687,6 +690,16 @@ body {
 .footer-form-subscribe {
     display: flex;
     gap: 24px;
+}
+.footer-input::placeholder {
+    color: #FFF;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 2;
+        letter-spacing: 0.04em;
+        padding-left: 16px;
+        padding-top: 8px;
+        padding-bottom: 8px;
 }
 
 .footer-btn {   
