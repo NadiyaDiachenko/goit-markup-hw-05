@@ -805,6 +805,9 @@ transition:  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
    fill: #FFFFFF;
 }
 
+.modal-close-btn-ikon{
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 /*modal window styles*/
 
@@ -938,11 +941,14 @@ border-color: rgba(64, 75, 191, 1);
  }
  .review-form-submit-btn {
     display: inline-flex;
+    cursor: pointer;
         padding: 16px 32px;
         align-items: flex-start;
         gap: 10px;
+        border: none;
         border-radius: 4px;
             background: var(--IRIS, #4D5AE5);
+            background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
             box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
             color:#FFF;
                 text-align: center;
