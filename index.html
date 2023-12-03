@@ -645,7 +645,7 @@
           </div>
           <div class="review-form-checkbox-wrapper">
             <input
-              class="revew-form-checkbox"
+              class="revew-form-checkbox visually-hidden"
               type="checkbox"
               id="user-privacy-policy"
               name="user-privacy-policy"
@@ -653,9 +653,18 @@
               required
             />
             <label class="revew-form-checkbox-label" for="user-privacy-policy">
-              <span class="revew-form-own-checkbox"></span>
+              <span class="revew-form-own-checkbox">
+                <svg
+                  class="revew-form-own-checkbox-ikon"
+                  width="10"
+                  height="10"
+                  aria-label="checkmark"
+                >
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg>
+              </span>
               I accept the terms and conditions of the
-              <a href="">Privacy Policy</a>
+              <a class="accent-colors" href="">Privacy Policy</a>
             </label>
           </div>
           <button class="review-form-submit-btn" type="button">Send</button>
